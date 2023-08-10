@@ -1,8 +1,8 @@
 ## Table of Contents
 
-[Exercise 1](https://github.com/brett-ranieri/python-achievement-1/edit/main/README.md#exercise-1)
+[Exercise 1](https://github.com/brett-ranieri/python-achievement-1/tree/main#exercise-1)
 
-[Exercise 2](https://github.com/brett-ranieri/python-achievement-1/edit/main/README.md#exercise-2)
+[Exercise 2](https://github.com/brett-ranieri/python-achievement-1/tree/main#exercise-2)
 
 
 # Exercise 1
