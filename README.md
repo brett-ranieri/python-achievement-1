@@ -1,3 +1,10 @@
+## Table of Contents
+
+[Exercise 1](https://github.com/brett-ranieri/python-achievement-1/edit/main/README.md#exercise-1)
+
+[Exercise 2](https://github.com/brett-ranieri/python-achievement-1/edit/main/README.md#exercise-2)
+
+
 # Exercise 1
 
 ## Install Python
@@ -19,6 +26,7 @@ Install ipython with the following command `pip install ipython` then test ipyth
 ## Export Requirements File
 
 Use `pip freeze > requirements.txt` to create a requirements file. Then create a new environment named `cf-python-copy`. Finally, within the new environment run `pip install -r requirements.txt`
+
 
 # Exercise 2
 
