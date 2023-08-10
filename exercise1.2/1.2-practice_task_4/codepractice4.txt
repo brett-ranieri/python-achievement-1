@@ -1,0 +1,16 @@
+'hello, how are you?'
+
+str3[3:]
+returns: 'lo, how are you?'
+
+str3[-3:]
+returns: 'ou?'
+
+str3[2:9:3]
+returns: 'l,o'
+
+str3[::-2]
+returns: '?o r o olh'
+
+str3[2:8]
+returns: 'llo, h' 
