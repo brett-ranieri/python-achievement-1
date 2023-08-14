@@ -4,6 +4,8 @@
 
 [Exercise 2](https://github.com/brett-ranieri/python-achievement-1/tree/main#exercise-2)
 
+[Exercise 3](https://github.com/brett-ranieri/python-achievement-1/tree/main#exercise-3)
+
 
 ## Exercise 1
 
@@ -53,3 +55,68 @@ Additional recipes are similar top structure for Tea recipe shown above. Add to 
 #### Print ingredients of each recipe as their own list
 
 Ingredients are built as a list within the structure, so just need to print for each recipe `print(all_recipes[0]['ingredients']`
+
+
+## Exercise 3
+
+#### Create file and initialize two empty lists
+
+Use file > new in vscode and save file to appropriate folder. Initialize an empty list with `recipes_list = []`
+
+#### Define a function called take_recipe
+
+`def take_recipe():
+    name = str(input("Enter recipe name: "))
+    cooking_time = int(input("Enter total cooking time: "))
+    ingredients = str(input("Enter ingredients, each seperated by a comma: ")).split(", ")
+    ingredients = [i.title() for i in ingredients]
+    recipe = {
+      "name": name.capitalize(),
+      "cooking_time": cooking_time,
+      "ingredients": ingredients
+    }
+    return(recipe)`
+
+#### Ask user how many receipes they want to add and store in variable
+
+`n = int(input("How many recipes would you like to enter: "))`
+
+#### Run a for loop 'n' times to take and store recipes/compare ingredients to list
+
+`for i in range(0,n):
+    recipe = take_recipe()
+    for ele in recipe['ingredients']:
+      if ele not in ingredients_list:
+        ingredients_list.append(ele)
+    recipes_list.append(recipe)`
+
+#### Run a for loop to assign difficulties to recipes and display them
+
+`for recipe in recipes_list:
+    if recipe['cooking_time'] < 10 and len(recipe['ingredients']) < 4:
+      recipe['difficulty'] = 'Easy'
+    elif recipe['cooking_time'] < 10 and len(recipe['ingredients']) >= 4:
+      recipe['difficulty'] = 'Medium'
+    elif recipe['cooking_time'] >= 10 and len(recipe['ingredients']) < 4:
+      recipe['difficulty'] = 'Intermediate'
+    elif recipe['cooking_time'] >= 10 and len(recipe['ingredients']) >= 4:
+      recipe['difficulty'] = 'Hard' 
+    else:
+      recipe['difficulty'] = 'Unknown'
+    print('')
+    print('Recipe:', recipe['name'])
+    print('Cooking Time (min):', recipe['cooking_time'])
+    print('Ingredients:')
+    for ele in recipe['ingredients']:
+       print(ele)
+    print('Difficulty level:', recipe['difficulty'])
+    print('')`
+
+#### Display ingredients list
+
+`ingredients_list.sort()
+print('-----------------------------------')
+print('Ingredients Used Across All Recipes')
+print('-----------------------------------')
+for ele in ingredients_list:
+  print('-', ele)`
